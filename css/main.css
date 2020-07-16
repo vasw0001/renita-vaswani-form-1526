@@ -33,6 +33,37 @@ font-family: 'Proza Libre', sans-serif;
     }
     
 
+      .actualform
+    {
+        
+        display: grid; 
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .box #box1
+    {
+     
+      grid-row: 1/ span 1;  
+    }
+    
+    .box #box2
+    {
+     
+      grid-row: 2/ span 1; 
+    }
+
+    legend
+{
+    color: black;
+    border: 1px solid black;
+    width: 25%;
+    height: 40%;
+    background-color: white;
+    padding: 1.5rem;
+    
+}
+
 
 /************
 DEFAULT STYLE
@@ -119,6 +150,8 @@ h2::first-letter {
 fieldset
 {
     width:20%;
+    background-color: #ededed;
+    margin: auto;
 }
 
 /*FORM*/
@@ -126,7 +159,7 @@ fieldset
 form {
     padding:1rem;
     margin-top: 2rem;
-    background-color: #F8F8F8;
+    
     
 }
 
@@ -149,7 +182,7 @@ form {
     width: 20rem;
 }
 
- .box input[type="submit"] {
+ .box input[type="button"] {
     background-color: royalblue;
     color: white;
     padding: 0.5rem 1rem;
@@ -181,7 +214,7 @@ header {
     
     line-height: 1.6;
     font-size: 1.5rem;
-    
+       
 }
  
     .box input
@@ -224,6 +257,3 @@ header {
 }
     
 
-
-
-}
